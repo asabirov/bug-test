@@ -5,16 +5,22 @@ body {
 }
 
 .sticker {
-    position: relative;
+    position: absolute;
     top: 200px;
-    left: 200px;
-    width: 400px;
-    height: 400px;
-    background: #ccc;
-    -moz-transform: rotate(35deg);
-    -o-transform: rotate(35deg);
-    -webkit-transform: rotate(35deg);
-    transform: rotate(35deg);
+    left: 100px;
+    width: 250px;
+    height: 250px;
+    background: #ccc;    
+}
+
+#sticker2 {
+    -moz-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+    -webkit-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+    top: 200px;
+    left: 500px;
+    
 }
 
 
@@ -108,5 +114,17 @@ body {
     <div class="sticker-decoration sticker-ne"></div>
     <div class="sticker-decoration sticker-nw"></div>    
 </div>
+
+<div class="sticker" id="sticker2">
+    <div class="sticker-decoration sticker-n"></div>
+    <div class="sticker-decoration sticker-e"></div>
+    <div class="sticker-decoration sticker-s"></div>
+    <div class="sticker-decoration sticker-w"></div>
+    <div class="sticker-decoration sticker-se"></div>
+    <div class="sticker-decoration sticker-sw"></div>
+    <div class="sticker-decoration sticker-ne"></div>
+    <div class="sticker-decoration sticker-nw"></div>    
+</div>
+
 </body>
 </html>
