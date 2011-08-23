@@ -1,0 +1,111 @@
+<html>
+<style>
+body {
+    background: #666;
+}
+
+.sticker {
+    position: relative;
+    top: 200px;
+    left: 200px;
+    width: 400px;
+    height: 400px;
+    background: #ccc;
+    -moz-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    transform: rotate(35deg);
+}
+
+
+.sticker-decoration {
+    display: block;
+    font-size: 0.1px;
+    position: absolute;
+    z-index: 99999;
+}
+
+.sticker-n, .sticker-s{
+    background: url(standart-sides-horizontal-f1f1f1.png) repeat;
+} 
+
+.sticker-e, .sticker-w {
+    background: url(standart-sides-vertical-f1f1f1.png) repeat;
+}
+
+.sticker-se, .sticker-sw, .sticker-nw, .sticker-ne {
+    background: url(standart-corners-f1f1f1.png) repeat;
+}
+
+
+.sticker-n {
+    height: 38px;
+    left: 0;
+    top: -38px;
+    width: 100%;
+    background-position: top left;
+}
+.sticker-s {
+    bottom: -38px;
+    height: 38px;
+    left: 0;
+    width: 100%;
+    background-position: bottom left;
+}
+.sticker-e {
+    height: 100%;
+    right: -38px;
+    top: 0;
+    width: 38px;
+    background-position: top right;
+}
+.sticker-w {
+    height: 100%;
+    left: -38px;
+    top: 0;
+    width: 38px;
+    background-position: top left;
+}
+.sticker-se {
+    height: 38px;
+    bottom: -38px;
+    right: -38px;
+    width: 38px;
+    background-position: bottom right;
+}
+.sticker-sw {
+    bottom: -38px;
+    height: 38px;
+    left: -38px;
+    width: 38px;
+    background-position: bottom left;
+}
+.sticker-nw {
+    height: 38px;
+    left: -38px;
+    top: -38px;
+    width: 38px;
+    background-position: top left;
+}
+.sticker-ne {
+    height: 38px;
+    right: -38px;
+    top: -38px;
+    width: 38px;
+    background-position: top right;
+}
+
+</style>
+
+<body>
+<div class="sticker">
+    <div class="sticker-decoration sticker-n"></div>
+    <div class="sticker-decoration sticker-e"></div>
+    <div class="sticker-decoration sticker-s"></div>
+    <div class="sticker-decoration sticker-w"></div>
+    <div class="sticker-decoration sticker-se"></div>
+    <div class="sticker-decoration sticker-sw"></div>
+    <div class="sticker-decoration sticker-ne"></div>
+    <div class="sticker-decoration sticker-nw"></div>    
+</div>
+</body>
+</html>
